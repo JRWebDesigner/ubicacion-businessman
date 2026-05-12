@@ -1,11 +1,14 @@
 // Navbar scoll effect
 const navbar = document.querySelector('.navbar');
+const navbarLogo = document.getElementById('navbar-logo');
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
         navbar.classList.add('scrolled');
+        navbarLogo.src = './images/logo.png';
     } else {
         navbar.classList.remove('scrolled');
+        navbarLogo.src = './images/logo-b.png';
     }
 });
 
